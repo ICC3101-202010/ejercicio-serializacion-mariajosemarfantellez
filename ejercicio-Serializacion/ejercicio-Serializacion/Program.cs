@@ -31,11 +31,11 @@ namespace ejercicio_Serializacion
 
                 if (respuesta.ToLower() == "a")
                 {
-                    Console.WriteLine("Diga el nombre\n");
+                    Console.WriteLine("\nDiga el nombre\n");
                     string nombre = Console.ReadLine();
-                    Console.WriteLine("Diga el apellido\n");
+                    Console.WriteLine("\nDiga el apellido\n");
                     string apellido = Console.ReadLine();
-                    Console.WriteLine("Diga la edad\n");
+                    Console.WriteLine("\nDiga la edad\n");
                     string Edad = Console.ReadLine();
                     int edad = Convert.ToInt32(Edad);
                     Person p1 = new Person(nombre, apellido, edad);
@@ -74,9 +74,9 @@ namespace ejercicio_Serializacion
                     stream.Close();
                     foreach(Person i in personas)
                     {
-                        Console.WriteLine(obj.Name);
-                        Console.WriteLine(obj.LastName);
-                        Console.WriteLine(obj.Age);
+                        Console.WriteLine(i.Name);
+                        Console.WriteLine(i.LastName);
+                        Console.WriteLine(i.Age);
                     }
 
                 }
